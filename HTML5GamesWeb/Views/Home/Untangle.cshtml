@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Untangle";
+}
+
+<link href="@Url.Content("~/Content/css/untangle.css")" rel="stylesheet" type="text/css" />
+
+@section header{
+    <h1>Drawing in Canvas</h1>
+}
+
+<canvas id="game" width="768" height="400">
+    Sorry, your web browser does not support Canvas content.
+</canvas>
+
+@section script{
+    <script src="@Url.Content("~/Scripts/games/html5games.untangle.js")"></script>
+
+}

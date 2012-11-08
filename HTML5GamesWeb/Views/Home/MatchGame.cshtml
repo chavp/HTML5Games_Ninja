@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "CSS3 Matching Game";
+}
+
+<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+
+<link href="@Url.Content("~/Content/css/matchgame.css")" rel="stylesheet" type="text/css" />
+
+@section header{
+    <h1>CSS3 Matching Game</h1>
+}
+
+<section id="game">
+    <div id="cards">
+        <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>
+        </div> <!-- .card -->
+    </div> <!-- #cards -->
+</section> <!-- #game -->
+
+@section footer{
+    <p>This is an example of creating a matching game with CSS3.</p>
+}
+
+@section script{
+    <script src="@Url.Content("~/Scripts/games/html5games.matchgame.js")"></script>
+
+}

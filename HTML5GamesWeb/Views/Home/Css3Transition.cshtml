@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Css3Transition";
+}
+
+<link href="@Url.Content("~/Content/css/css3transition.css")" rel="stylesheet" type="text/css" />
+
+@section header{
+    <h1>Getting Familiar with CSS3 Transition</h1>
+}
+
+<section id="game">
+    <div id="cards">
+        <div id="card1" class="card cardAK"></div>
+        <div id="card2" class="card cardAQ"></div>
+    </div> <!-- #cards -->
+</section> <!-- #game -->
+
+@section footer{
+    <p>This is an example of transitioning cards.</p>
+}
+
+@section script{
+    <script>
+        $(function () {
+            $("#card1").addClass("moveAndScale");
+            $("#card2").addClass("rotateRight");
+        });
+    </script>
+}
