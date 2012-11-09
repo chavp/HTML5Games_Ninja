@@ -2,15 +2,22 @@
     ViewBag.Title = "Untangle";
 }
 
+<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+
 <link href="@Url.Content("~/Content/css/untangle.css")" rel="stylesheet" type="text/css" />
 
 @section header{
-    <h1>Drawing in Canvas</h1>
+    
 }
 
-<canvas id="game" width="768" height="400">
-    Sorry, your web browser does not support Canvas content.
-</canvas>
+<section id="layers">
+    <canvas id="bg" width="768" height="440">
+    Sorry, your web browser does not support canvas content.
+    </canvas>
+    <canvas id="guide" width="768" height="440"></canvas>
+    <canvas id="game" width="768" height="440"></canvas>
+    <canvas id="ui" width="768" height="440"></canvas>
+</section>
 
 @section script{
     <script src="@Url.Content("~/Scripts/games/html5games.untangle.js")"></script>

@@ -1,3 +1,30 @@
-﻿canvas {
-background: #333;
+﻿
+#layers 
+{
+height: 440px;
+position: relative;
+margin: 0 auto;
+width:768px;
+height: 440px;
+}
+
+#layers canvas{
+left: 50%;
+margin-left: -384px;
+position: absolute;
+}
+#guide {
+opacity: .7;
+}
+#guide.fadeout {
+opacity: 0;
+-webkit-transition: opacity .5s linear;
+transition: opacity .5s linear;
+}
+#ui {
+-webkit-transition: opacity .3s linear;
+transition: opacity .3s linear;
+}
+#ui.dim {
+opacity: .3;
 }

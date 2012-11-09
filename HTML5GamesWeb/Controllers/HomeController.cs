@@ -45,5 +45,10 @@ namespace HTML5GamesWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult UntangleGame()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "UntangleGame";
+}
+
+<link href="@Url.Content("~/Content/css/untangle.css")" rel="stylesheet" type="text/css" />
+
+@section header{
+    <h1>Untangle Puzzle Game in Canvas</h1>
+}
+
+<canvas id="game" width="768" height="400">
+    Sorry, your web browser does not support Canvas content.
+</canvas>
+
+<p>Puzzle <span id="level">0</span>, Completeness:
+<span id="progress">0</span>%</p>
+
+@section script{
+    <script src="@Url.Content("~/Scripts/games/html5games.untanglegame.js")"></script>
+
+}
