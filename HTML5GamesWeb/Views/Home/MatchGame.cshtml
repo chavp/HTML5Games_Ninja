@@ -4,7 +4,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 
-<link href="@Url.Content("~/Content/css/matchgame.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/matching_game_with_game_over.css")" rel="stylesheet" type="text/css" />
 
 @section header{
     <h1>CSS3 Matching Game</h1>
@@ -19,6 +19,29 @@
     </div> <!-- #cards -->
 </section> <!-- #game -->
 
+<section id="popup" class="hide">
+    <div id="popup-bg">
+    </div>
+    <div id="popup-box">
+        <div class="ribbon hide">
+            <div class="ribbon-body">
+                <span>New Record</span>
+            </div>
+            <div class="triangle"></div>
+        </div>
+        <div id="popup-box-content">
+            <h1>You Won!</h1>
+            <p>Your Score:</p>
+            <p><span class='score'>13</span></p>
+            <p>
+                <small>
+                Last Score: <span class='last-score'>20</span><br>
+                Saved on: <span class='saved-time'>13/4/2011 3:14pm</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</section>
 @section footer{
     <p>This is an example of creating a matching game with CSS3.</p>
 }

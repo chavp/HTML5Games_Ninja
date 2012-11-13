@@ -108,6 +108,7 @@
     <Content Include="Content\css\css3flip.css" />
     <Content Include="Content\css\css3transition.css" />
     <Content Include="Content\css\matchgame.css" />
+    <Content Include="Content\css\matching_game_with_game_over.css" />
     <Content Include="Content\css\untangle.css" />
     <Content Include="Content\images\AK.png" />
     <Content Include="Content\images\AQ.png" />
@@ -117,6 +118,7 @@
     <Content Include="Content\images\deck.png" />
     <Content Include="Content\images\guide_sprite.png" />
     <Content Include="Content\images\pixel_grid.jpg" />
+    <Content Include="Content\images\popup_bg.jpg" />
     <Content Include="Content\images\table.jpg" />
     <Content Include="Content\images\title_bg.png" />
     <Content Include="Content\images\__MACOSX\._bg_repeat.png" />
